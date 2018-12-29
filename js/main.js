@@ -19,8 +19,13 @@ game.resolution = window.devicePixelRatio / window.devicePixelRatio;
 var gameSettings = {
     /*VIEW*/
     background: './assets/view/menu-bkg.jpg',
+    background2: './assets/view/night_bkg.jpg',
     /*UI*/
-    button: './assets/ui/button.png'
+    button: './assets/ui/button.png',
+    /*GAME*/
+    char1: './assets/game/idle_small.png',
+    char2: './assets/game/knight3_attack_small.png',
+    char3: './assets/game/knight1_attack_hurt_small.png'
 }
 
 game.state.add('menu', stage.menu);
