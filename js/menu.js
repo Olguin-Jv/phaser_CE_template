@@ -22,7 +22,7 @@ stage.menu.prototype = {
         centerY = game.world.centerY;
         showDimensions();
 
-        this.add.image(0, 0, 'bkg');
+        this.add.image(centerX, centerY, 'bkg').anchor.setTo(.5);
 
         createBtn(centerX, centerY, 'btn', 'PLAY', goGame, menuTxt);
     

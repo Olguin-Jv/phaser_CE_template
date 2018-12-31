@@ -1,12 +1,13 @@
 
 if (!window.orientation) {
 	gameX = 800;
-	gameY = 600;
+    gameY = 600;
 }
 if (window.orientation == 0 || window.orientation == 90 || window.orientation == -90) {
 	gameX = 400;
-	gamey = 500;
+    gamey = 500;
 	showControls = true;
+    document.getElementById('rotate').classList.add('rotate');
 }
 
 var game = new Phaser.Game(gameX, gameY, Phaser.AUTO);

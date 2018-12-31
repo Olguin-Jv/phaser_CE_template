@@ -2,30 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="phaser/phaser2.11.1.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/lvl1.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="phaser/phaser2.11.1.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/lvl1.js"></script>
 
-    <script src="demo/logs.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          // Put your fonts to load here.
-          families: ['Charm', 'Roboto', 'Montserrat', 'Staatliches']
-        }
-      });
-    </script>
-    <link rel="stylesheet" href="css/style.css">
+  <script src="demo/logs.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <script>
+    WebFont.load({
+      google: {
+        // Put your fonts to load here.
+        families: ['Charm', 'Roboto', 'Montserrat', 'Staatliches']
+      }
+    });
+  </script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div id="game-area"></div>
+  <div id="rotate" class="rotate">
+    <p>Please rotate your phone</p>
+  </div>
+
+  <div id="game-area"></div>
 
 </body>
 <script src="js/main.js"></script>

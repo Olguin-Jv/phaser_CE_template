@@ -8,14 +8,14 @@ stage.lvl1.prototype = {
         
     },
     create: function () {
-        this.add.image(0, 0, 'night_bkg');
+        this.add.image(centerX, centerY, 'night_bkg').anchor.setTo(.5);
 
         var char1, char2, char3;
-        createCharacter(char1, 'char1', 200, 450, .5, .5, 'idle');
+        createCharacter(char1, 'char1', gameWidth*0.2, 450, .5, .5, 'idle');
         setTimeout(function(){
-            createCharacter(char3, 'char3', 430, 450, -.5, .5, 'hurt');
+            createCharacter(char3, 'char3', gameWidth*0.55, 450, -.5, .5, 'hurt');
         }, 300);
-        createCharacter(char2, 'char2', 400, 440, .5, .5, 'atack');
+        createCharacter(char2, 'char2', gameWidth*0.5, 440, .5, .5, 'atack');
     },
     update: function () { }
 }
